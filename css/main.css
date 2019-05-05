@@ -3,6 +3,18 @@ body {
   font-family: 'Gothic A1', sans-serif;
 }
 
+.nav-link {
+  color: rgba(0, 0, 0, 1);
+}
+
+.nav-link.active {
+  color: #ffc107;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
 h1, h5 {
   font-weight: bold;
 }

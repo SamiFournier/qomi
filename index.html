@@ -19,7 +19,7 @@
     <title>Qomi - XXX</title>
 
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navQomi" data-offset="120">
     <section id="header" class="container-fluid d-flex flex-row p-0 m-0 justify-content-between m1vh">
       <div class="d-flex flex-column col-11 col-sm-10 col-md-8 p-3 p-md-5 ml-sm-4 justify-content-center align-items-center align-items-md-start text-center text-sm-left">
         <h1>L’assistant communication des restaurateurs</h1>
@@ -27,6 +27,30 @@
         <a href="#" class="btn btn-lg cta mt-3">commencer maintenant</a>
       </div>
     </section>
+    <nav id="navQomi" class="navbar navbar-expand-lg sticky-top pt-0 pb-0">
+      <a class="navbar-brand ml-4" href="#">
+        <img src="./images/Logo_1.png" width="auto" height="55" class="d-inline-block align-top" alt="">
+      </a>
+      <div class="collapse navbar-collapse" id="Toogle">
+          <ul class="navbar-nav mt-2 mt-lg-0 mx-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="#VA">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#offre">Offre</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#commentcasepasse">Comment ça se passe ?</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#histoire">Equipe</a>
+              </li>
+          </ul>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Toogle" aria-controls="Toogle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fa fa-bars mx-auto" aria-hidden="true"></i></span>
+      </button>
+    </nav>
     <section id="VA" class="container">
       <div class="row justify-content-center m-5">
         <h3 class="col-12 col-md-8 text-center">Qomi crée un contenu engageant pour élargir votre présence en ligne, et inciter votre communauté à venir plus souvent dans votre restaurant</h2>
@@ -255,9 +279,9 @@
     <section id="footer">
 
     </section>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
   </body>
 </html>
