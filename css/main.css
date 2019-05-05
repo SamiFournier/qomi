@@ -72,6 +72,118 @@ section#header {
   color: black;
 }
 
+section#header img {
+  position: absolute;
+}
+
+.bounce1 {
+  animation: bounce1 4s linear 0s infinite normal both;
+}
+@keyframes bounce1 {
+  0% {transform: translate(0px, 0px);}
+  25% {transform: translate(0px, -10px);}
+  75% {transform: translate(0px, 10px);}
+  100% {transform: translate(0px, 0px);}
+}
+
+.bounce2 {
+  animation: bounce2 2s linear 0s infinite normal both;
+}
+@keyframes bounce2 {
+  0% {transform: translate(0px, 0px);}
+  25% {transform: translate(0px, -10px);}
+  75% {transform: translate(0px, 10px);}
+  100% {transform: translate(0px, 0px);}
+}
+
+.bounce3 {
+  animation: bounce2 3s linear 0s infinite normal both;
+}
+@keyframes bounce2 {
+  0% {transform: translate(0px, 0px);}
+  25% {transform: translate(0px, -10px);}
+  75% {transform: translate(0px, 10px);}
+  100% {transform: translate(0px, 0px);}
+}
+
+#love1 {
+  height: 4vh;
+  top: 20vh;
+  left: 20vw;
+}
+
+#love2 {
+  height: 4vh;
+  top: 70vh;
+  left: 60vw;
+}
+
+#love3 {
+  height: 5vh;
+  top: 85vh;
+  left: 10vw;
+}
+
+#like1 {
+  height: 4vh;
+  top: 15vh;
+  left: 40vw;
+}
+
+#like2 {
+  height: 4vh;
+  top: 87vh;
+  left: 47vw;
+}
+
+#like3 {
+  height: 5vh;
+  top: 67vh;
+  left: 80vw;
+}
+
+#like4 {
+  height: 4vh;
+  top: 10vh;
+  left: 7vw;
+}
+
+#insta1 {
+  height: 5vh;
+  top: 10vh;
+  left: 70vw;
+}
+
+#insta2 {
+  height: 5vh;
+  top: 25vh;
+  left: 15vw;
+}
+
+#insta3 {
+  height:5vh;
+  top: 67vh;
+  left: 30vw;
+}
+
+#facebook1 {
+  height: 4vh;
+  top: 45vh;
+  left: 80vw;
+}
+
+#facebook2 {
+  height: 4vh;
+  top: 90vh;
+  left: 25vw;
+}
+
+#facebook3 {
+  height: 4vh;
+  top: 25vh;
+  left: 60vw;
+}
+
 .carousel {
   height: 344px;
 }
