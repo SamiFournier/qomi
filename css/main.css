@@ -89,3 +89,8 @@ section#header {
 #commentcasepasse h5, #histoire h5 {
   text-transform : uppercase;
 }
+
+section#footer {
+  height: 200px;
+  background-color: rgba(169, 213, 225, 1);
+}
