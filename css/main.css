@@ -29,7 +29,7 @@ h1, h5 {
   border-radius: 50%;
 }
 
-.cta {
+.cta, .btn.btn-raised.btn-primary {
   background-color: #ffc107;
   color: #ffffff;
   border: none;
@@ -40,15 +40,17 @@ h1, h5 {
   white-space: normal;
 }
 
-.cta:hover {
+.cta:hover, .btn.btn-raised.btn-primary:hover {
   background-color: #ffffff;
   border: 1px solid #ffc107;
   color: #ffc107;
   box-shadow: 0 10px 20px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
-.cta:focus {
+.cta:focus, .btn.btn-raised.btn-primary:focus, .cta:active, .btn.btn-raised.btn-primary:active, .btn.btn-raised.btn-primary:active:focus  {
   box-shadow: none;
+  background-color: #ffc107;
+  border: 1px solid #ffc107;
 }
 
 
