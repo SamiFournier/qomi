@@ -8,21 +8,13 @@ $('.test, .nav-link, .navbar-brand, .new-button').click(function() {
 
 
 //post_form
-var $form = $('form#sub_form'),
-    url = 'https://script.google.com/macros/s/AKfycbykzUMz-ADyIxVI1OZK6oEKNlZnRIz2PP-nF-fwKpd6qfK8czc/exec'
 
-$('#submit-form').on('click', function(e) {
-  e.preventDefault();
-  console.log($form.serializeObject());
-  var jqxhr = $.ajax({
-    url: url,
-    method: "GET",
-    dataType: "json",
-    data: $form.serializeObject()
-  }).done(
-    // do something
-    function(){
-      console.log("Get OK");
-    }
-  );
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyXd7HEGZodsVu8QA3cVkpcI2pKj5saTBvFxM_aJAGsyeiBjFk/exec'
+const form = document.forms['submit-to-google-sheet']
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => console.log('Success!', response))
+    .catch(error => console.error('Error!', error.message))
 })
