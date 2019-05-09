@@ -317,7 +317,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <form name="submit-to-google-sheet">
+            <form name="submit-to-google-sheet" id="submit-to-google-sheet" class="">
               <div class="form-group">
                 <label for="firstname" class="bmd-label-floating">Prénom</label>
                 <input type="text" class="form-control" name="firstname" id="firstname">
@@ -338,11 +338,17 @@
               <br>
               <button type="submit" class="btn btn-raised cta" id="submit-form">Submit</button>
             </form>
+            <div id="modal_loader" class="row justify-content-center align-items-center col-12 d-none">
+              <div id="main">
+                <span class="spinner"></span>
+              </div>
+            </div>
+            <div id="modal_success"class="col-12 d-none">
+              <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg>
+              <h4 class="text-center">Merci pour votre inscription !</h4>
+              <p class="text-center">Nous vous recontactons dans les plus brefs délais.</p>
+            </div>
           </div>
-          <!-- <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Save changes</button>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div> -->
         </div>
       </div>
     </div>

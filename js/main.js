@@ -13,8 +13,13 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbyXd7HEGZodsVu8QA3cVk
 const form = document.forms['submit-to-google-sheet']
 
 form.addEventListener('submit', e => {
-  e.preventDefault()
+  e.preventDefault();
+  document.getElementById('submit-to-google-sheet').className="d-none";
+  document.getElementById('modal_loader').classList.remove("d-none");
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => console.log('Success!', response))
+    .then(response => {
+      document.getElementById('modal_loader').className="d-none";
+      document.getElementById('modal_success').classList.remove("d-none");
+    })
     .catch(error => console.error('Error!', error.message))
 })
