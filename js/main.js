@@ -21,5 +21,9 @@ form.addEventListener('submit', e => {
       document.getElementById('modal_loader').className="d-none";
       document.getElementById('modal_success').classList.remove("d-none");
     })
-    .catch(error => console.error('Error!', error.message))
+    .catch(error => {
+      console.error('Error!', error.message);
+      document.getElementById('modal_loader').className="d-none";
+      document.getElementById('modal_error').classList.remove("d-none");
+    })
 })
