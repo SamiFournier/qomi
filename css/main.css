@@ -66,10 +66,15 @@ section#header {
   background-size: auto 95%;
   background-image: url(../images/homeCooker.png);
   background-position: top right;
+  color: black;
 }
 
 #headerPhoto {
   max-height: 95vh;
+}
+
+section#header img {
+  position: absolute;
 }
 
 .card-shadow {
@@ -78,13 +83,7 @@ section#header {
   border-radius: 0;
 }
 
-section#header {
-  color: black;
-}
 
-section#header img {
-  position: absolute;
-}
 
 .bounce1 {
   animation: bounce1 4s linear 0s infinite normal both;
@@ -244,8 +243,11 @@ section#header img {
 }
 
 section#footer {
-  height: 200px;
   background-color: rgba(169, 213, 225, 1);
+}
+
+ul {
+  list-style: none;
 }
 
 /* Animation Loader */
