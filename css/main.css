@@ -11,6 +11,12 @@ body {
   color: #ffc107;
 }
 
+.navbar {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: none;
+  z-index: 3;
+}
+
 .nav-link {
   color: rgba(0, 0, 0, 1);
 }
@@ -18,11 +24,6 @@ body {
 
 .nav-link.active, .nav-link:hover {
   color: #ffc107;
-}
-
-.navbar {
-  background-color: rgba(255, 255, 255, 0.95);
-  box-shadow: none;
 }
 
 h1, h5 {
@@ -197,8 +198,9 @@ section#header img {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.carousel {
-  height: 344px;
+.carousel-indicators {
+  position: relative;
+  bottom: 0;
 }
 
 .carousel-indicators li {
@@ -209,6 +211,24 @@ section#header img {
 }
 .carousel-indicators .active {
   background-color: rgba(255,193, 7, 1);
+}
+
+.carousel img {
+  width: 100%;
+}
+
+.cicle {
+  border-radius: 50%;
+}
+
+.fa-check {
+  color: #7ac142;
+  font-size: 1.5em;
+}
+
+.fa-times {
+  color: #D06079;
+  font-size: 1.5em;
 }
 
 #commentcasepasse h5, #histoire h5 {
