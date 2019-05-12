@@ -3,6 +3,10 @@ body {
   font-family: 'Gothic A1', sans-serif;
 }
 
+img {
+  pointer-events: none;
+}
+
 .bold {
   font-weight: 800;
 }
