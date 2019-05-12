@@ -198,6 +198,10 @@ section#header img {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
+.numberVA {
+  font-size: 3.5em;
+}
+
 .carousel-indicators {
   position: relative;
   bottom: 0;
