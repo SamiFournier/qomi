@@ -230,7 +230,7 @@ section#header img {
 }
 
 .slick-slide img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .slick-dots li button:before {
