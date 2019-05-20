@@ -83,11 +83,11 @@
       <img src="./images/facebook.png" alt="love Instagram restaurant" id="facebook3" class="bounce2">
       <div id="fond_blanc" class="d-md-none"></div>
       <div class="m1vh row align-items-center pt-5">
-        <div class="container row p-0 m-0 justify-content-between mt-5 pt-5">
+        <div class="row p-0 m-0 justify-content-between mt-5 pt-5">
           <div id="header_title" class="d-flex flex-column col-12 col-md-8 justify-content-center align-items-center align-items-md-start text-center text-md-left">
             <h1 class="bold">Le community manager intelligent des restaurateurs</h1>
             <h3 class="d-none d-md-flex">Qomi crée et diffuse de manière optimale votre contenu sur les réseaux sociaux</h3>
-            <a href="#" class="btn btn-lg btn-raised cta mt-3" data-toggle="modal" data-target=".bd-inscription-modal">Je veux découvrir</a>
+            <a href="./inscription.html" class="btn btn-lg btn-raised cta mt-3">Je veux découvrir</a>
           </div>
         </div>
         <div class="arrow bounce col-12 align-self-end">
@@ -144,7 +144,7 @@
                 <hr>
               </div>
               <h2 class="card-title text-center mt-4 mb-0"><span class="bold">99€ HT/mois</span></h2>
-              <a href="#" class="btn btn-lg btn-raised cta mt-4 mb-3" data-toggle="modal" data-target=".bd-inscription-modal">Je veux en savoir plus</a>
+              <a href="./inscription.html" class="btn btn-lg btn-raised cta mt-4 mb-3">Je veux en savoir plus</a>
             </div>
           </div>
       </div>
@@ -227,7 +227,7 @@
         </div>
       </div>
       <div class="row justify-content-center m-3 mb-5">
-        <a href="#" class="btn btn-lg btn-raised cta mt-3 mb-3" data-toggle="modal" data-target=".bd-inscription-modal">Je change mon quotidien</a>
+        <a href="./inscription.html" class="btn btn-lg btn-raised cta mt-3 mb-3">Je change mon quotidien</a>
       </div>
     </section>
     <div class="container">
@@ -332,7 +332,7 @@
         <img class="d-none d-md-flex col-md-5" src="./images/undraw_social_dashboard_k3pt.svg" alt="Contacteznous">
       </div>
       <div class="row justify-content-center">
-        <a href="#" class="btn btn-lg btn-raised cta" data-toggle="modal" data-target=".bd-inscription-modal">Prendre rendez-vous avec un expert</a>
+        <a href="./inscription.html" class="btn btn-lg btn-raised cta">Prendre rendez-vous avec un expert</a>
       </div>
     </section>
     <div class="container d-none d-md-block">
@@ -352,7 +352,7 @@
         <img class="d-none d-md-flex col-3" src="./images/sami.png" alt="photo simon Qomi">
       </div>
       <div class="row justify-content-center mb-5">
-        <a href="#" class="btn btn-lg btn-raised cta" data-toggle="modal" data-target=".bd-inscription-modal">Prendre contact avec l'équipe</a>
+        <a href="./inscription.html" class="btn btn-lg btn-raised cta">Prendre contact avec l'équipe</a>
       </div>
     </section>
     <section id="footer" class="container-fluid">
@@ -385,60 +385,6 @@
         </div>
       </div>
     </section>
-    <div class="modal fade bd-inscription-modal" tabindex="0" role="dialog" aria-labelledby="inscriptionModal" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Inscription</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form name="submit-to-google-sheet" id="submit-to-google-sheet" class="">
-              <div class="form-group">
-                <label for="firstname" class="bmd-label-floating">Prénom</label>
-                <input type="text" class="form-control" name="firstname" id="firstname" required>
-              </div>
-              <div class="form-group">
-                <label for="lastname" class="bmd-label-floating">Nom</label>
-                <input type="text" class="form-control" name="lastname" id="lastname" required>
-              </div>
-              <div class="form-group">
-                <label for="email" class="bmd-label-floating">Email</label>
-                <input type="email" class="form-control" name="email" id="email" required>
-              </div>
-              <div class="form-group">
-                <label for="phone" class="bmd-label-floating">Téléphone</label>
-                <input type="tel" class="form-control" name="phone" id="phone" required>
-                <span class="bmd-help">Nous avons besoin de votre téléphone pour vous recontacter</span>
-              </div>
-              <br>
-              <button type="submit" class="btn btn-raised cta" id="submit-form">Valider</button>
-            </form>
-            <div id="modal_loader" class="row justify-content-center align-items-center col-12 d-none">
-              <div id="main">
-                <span class="spinner"></span>
-              </div>
-            </div>
-            <div id="modal_success"class="col-12 d-none">
-              <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg>
-              <h4 class="text-center">Merci pour votre inscription !</h4>
-              <p class="text-center">Nous vous recontactons dans les plus brefs délais.</p>
-            </div>
-            <div id="modal_error"class="col-12 d-none">
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
-                <circle class="path circle" fill="none" stroke="#D06079" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
-                <line class="path line" fill="none" stroke="#D06079" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="34.4" y1="37.9" x2="95.8" y2="92.3"/>
-                <line class="path line" fill="none" stroke="#D06079" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="95.8" y1="38" x2="34.4" y2="92.2"/>
-              </svg>
-              <h4 class="text-center mt-3">Quelque chose n'a pas marché !</h4>
-              <p class="text-center">Nous sommes désolés, mais votre inscription n'a pas fonctionné, vous pouvez actualiser la page pour recommencer votre inscription ou nous contacter par email à l'adresse simon@qomi.fr</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>

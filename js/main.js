@@ -1,7 +1,6 @@
 //initialisation slick
 $(document).ready(function(){
-  $('.testimonialsCarousel').slick({
-  });
+  $('.testimonialsCarousel').slick({});
 });
 
 
@@ -21,6 +20,8 @@ const form = document.forms['submit-to-google-sheet']
 form.addEventListener('submit', e => {
   e.preventDefault();
   document.getElementById('submit-to-google-sheet').classList.add("d-none");
+  document.getElementById('formTitle1').classList.add("d-none");
+  document.getElementById('formTitle2').classList.add("d-none");
   document.getElementById('modal_loader').classList.remove("d-none");
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .then(response => {

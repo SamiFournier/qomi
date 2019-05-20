@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Qomi crée un contenu engageant pour élargir la présence en ligne des restaurateurs, et inciter les clients à venir plus souvent dans votre restaurant." />
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css">
+    <!-- font and other CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1:100,400,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" href="./images/logo_1_square.png" />
+
+    <title>Qomi - Le community manager intelligent des restaurateurs</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140154746-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-140154746-1');
+    </script>
+    <!-- Hotjar Tracking Code for https://qomi.fr -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:1316999,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+  </head>
+  <body>
+    <div class="container-fluid m1vh row m-0 p-0">
+      <div class="col-12 col-md-5 d-flex flex-column justify-content-center">
+        <h3 class="text-center" id="formTitle1">Simplifiez la gestion de votre communication</h3>
+        <h5 class="text-center" id="formTitle2">Donnez nous quelques infos, on vous rappelle très vite</h5>
+        <form name="submit-to-google-sheet" id="submit-to-google-sheet" class="m-5">
+          <div class="form-group">
+            <label for="firstname" class="bmd-label-floating">Prénom</label>
+            <input type="text" class="form-control" name="firstname" id="firstname" required>
+          </div>
+          <div class="form-group">
+            <label for="lastname" class="bmd-label-floating">Nom</label>
+            <input type="text" class="form-control" name="lastname" id="lastname" required>
+          </div>
+          <div class="form-group">
+            <label for="email" class="bmd-label-floating">Email</label>
+            <input type="email" class="form-control" name="email" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone" class="bmd-label-floating">Téléphone</label>
+            <input type="tel" class="form-control" name="phone" id="phone" required>
+            <span class="bmd-help">Nous avons besoin de votre téléphone pour vous recontacter</span>
+          </div>
+          <br>
+          <button type="submit" class="btn btn-raised cta" id="submit-form">Découvrir gratuitement</button>
+        </form>
+        <div id="modal_loader" class="row justify-content-center align-items-center d-none">
+          <div id="main">
+            <span class="spinner"></span>
+          </div>
+        </div>
+        <div id="modal_success"class="justify-content-center align-items-center d-none">
+          <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg>
+          <h4 class="text-center">Merci pour votre inscription !</h4>
+          <p class="text-center">Nous vous recontactons dans les plus brefs délais.</p>
+        </div>
+        <div id="modal_error"class="justify-content-center align-items-center d-none">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+            <circle class="path circle" fill="none" stroke="#D06079" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
+            <line class="path line" fill="none" stroke="#D06079" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="34.4" y1="37.9" x2="95.8" y2="92.3"/>
+            <line class="path line" fill="none" stroke="#D06079" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="95.8" y1="38" x2="34.4" y2="92.2"/>
+          </svg>
+          <h4 class="text-center mt-3">Quelque chose n'a pas marché !</h4>
+          <p class="text-center">Nous sommes désolés, mais votre inscription n'a pas fonctionné, vous pouvez actualiser la page pour recommencer votre inscription ou nous contacter par email à l'adresse simon@qomi.fr</p>
+        </div>
+      </div>
+      <div class="d-none d-md-flex col-7 p-0" id="imgSignIn"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+    <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
+</html>
