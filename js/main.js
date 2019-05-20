@@ -1,3 +1,10 @@
+//initialisation slick
+$(document).ready(function(){
+  $('.testimonialsCarousel').slick({
+  });
+});
+
+
 //jQuery for page scrolling feature - requires jQuery Easing plugin
 $('.link-footer, .nav-link, .navbar-brand, .new-button').click(function() {
     var sectionTo = $(this).attr('href');
@@ -5,7 +12,6 @@ $('.link-footer, .nav-link, .navbar-brand, .new-button').click(function() {
       scrollTop: $(sectionTo).offset().top-65
     }, 1500);
 });
-
 
 //post_form
 

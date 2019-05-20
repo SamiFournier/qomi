@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: 'Gothic A1', sans-serif;
+  background-color: white;
 }
 
 img {
@@ -77,6 +78,30 @@ section#header img {
   position: absolute;
 }
 
+.arrow {
+  text-align: center;
+  margin: 2% 0;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+
+
 .card-shadow {
   box-shadow: 0 16px 48px rgba(32,41,50,0.12);
   border: none;
@@ -142,7 +167,7 @@ section#header img {
 #like2 {
   height: 4vh;
   top: 87vh;
-  left: 47vw;
+  left: 56vw;
 }
 
 #like3 {
@@ -165,8 +190,8 @@ section#header img {
 
 #insta2 {
   height: 5vh;
-  top: 25vh;
-  left: 15vw;
+  top: 50vh;
+  left: 60vw;
 }
 
 #insta3 {
@@ -205,23 +230,19 @@ section#header img {
   font-size: 3.5em;
 }
 
-.carousel-indicators {
-  position: relative;
-  bottom: 0;
+.slick-slide img {
+  max-width: 100%;
 }
 
-.carousel-indicators li {
-  background-color: rgba(255,193, 7, 0.2);
-  height: 12px;
-  width: 12px;
-  border-radius: 50%;
-}
-.carousel-indicators .active {
-  background-color: rgba(255,193, 7, 1);
+.slick-dots li button:before {
+  color: rgba(255,193, 7, 0.2);
+  font-size: 16px;
+  opacity: 1;
 }
 
-.carousel img {
-  width: 100%;
+.slick-dots li.slick-active button:before, .slick-next:before, .slick-prev:before {
+  color: rgba(255,193, 7, 1);
+  opacity: 1;
 }
 
 .cicle {

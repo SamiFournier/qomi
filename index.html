@@ -13,6 +13,9 @@
     <!-- font and other CSS -->
     <link href="https://fonts.googleapis.com/css?family=Gothic+A1:100,400,900" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" type="image/png" href="./images/logo_1_square.png" />
 
@@ -43,7 +46,7 @@
 
   </head>
   <body data-spy="scroll" data-target="#navQomi" data-offset="120">
-    <nav id="navQomi" class="navbar navbar-expand-lg sticky-top pt-0 pb-0">
+    <nav id="navQomi" class="navbar navbar-expand-lg fixed-top pt-0 pb-0">
       <a class="navbar-brand ml-4" href="#header">
         <img src="./images/Logo_1.png" width="auto" height="55" class="d-inline-block align-top" alt="" id="logo_square">
       </a>
@@ -64,7 +67,7 @@
         <span class="navbar-toggler-icon"><i class="fa fa-bars mx-auto" aria-hidden="true"></i></span>
       </button>
     </nav>
-    <section id="header" class="container-fluid d-flex flex-row p-0 m-0 justify-content-between m1vh">
+    <section id="header" class="container-fluid">
       <img src="./images/love.svg" alt="love Instagram restaurant" id="love1" class="bounce1">
       <img src="./images/love.svg" alt="love Instagram restaurant" id="love2" class="bounce3">
       <img src="./images/love.svg" alt="love Instagram restaurant" id="love3" class="bounce2">
@@ -79,17 +82,24 @@
       <img src="./images/facebook.png" alt="love Instagram restaurant" id="facebook2" class="bounce1">
       <img src="./images/facebook.png" alt="love Instagram restaurant" id="facebook3" class="bounce2">
       <div id="fond_blanc" class="d-md-none"></div>
-      <div id="header_title" class="d-flex flex-column col-12 col-md-8 p-4 p-md-5 justify-content-center align-items-center align-items-md-start text-center text-md-left">
-        <h1 class="bold">Le community manager intelligent des restaurateurs</h1>
-        <h3 class="d-none d-md-flex">Qomi crée et diffuse de manière optimale votre contenu sur les réseaux sociaux</h3>
-        <a href="#" class="btn btn-lg btn-raised cta mt-3" data-toggle="modal" data-target=".bd-inscription-modal">commencer maintenant</a>
+      <div class="m1vh row align-items-center pt-5">
+        <div class="row p-0 m-0 justify-content-between mt-5 pt-5">
+          <div id="header_title" class="d-flex flex-column col-12 col-md-8 p-5 justify-content-center align-items-center align-items-md-start text-center text-md-left">
+            <h1 class="bold">Le community manager intelligent des restaurateurs</h1>
+            <h3 class="d-none d-md-flex">Qomi crée et diffuse de manière optimale votre contenu sur les réseaux sociaux</h3>
+            <a href="#" class="btn btn-lg btn-raised cta mt-3" data-toggle="modal" data-target=".bd-inscription-modal">Je veux découvrir</a>
+          </div>
+        </div>
+        <div class="arrow bounce col-12 align-self-end">
+          <a class="fa fa-arrow-down fa-3x nav-link" href="#offre"></a>
+        </div>
       </div>
     </section>
     <section id="VA" class="container">
       <div class="row justify-content-center mr-2 mr-md-5 ml-2 ml-md-5 mt-5 mb-4">
         <h3 class="col-12 col-md-9 text-center bold">Qomi crée un contenu engageant pour <span class="jaune">élargir votre présence en ligne</span>, et inciter votre communauté à <span class="jaune">venir plus souvent</span> dans votre restaurant</h2>
       </div>
-      <div class="row justify-content-center justify-content-lg-between m-5">
+      <div class="row justify-content-center justify-content-lg-between m-5 d-none d-md-flex">
         <div class="card card-shadow col-11 col-sm-9 col-lg-3 m-3 m-lg-0">
           <img class="card-img-top p-2" src="./images/undraw_community_8nwl.svg" alt="Photo Communication">
           <div class="card-body pr-2 pl-2">
@@ -146,122 +156,87 @@
         </div>
       </div>
     </div>
-    <section id="chiffres" class="container">
-      <div class="row justify-content-center mr-2 ml-2 mt-5 mb-5 m-md-5">
-        <h3 class="col-12 col-md-8 text-center mb-4 bold">Développez votre chiffre d’affaires grâce aux réseaux sociaux</h2>
-        <p class="col-12 text-center">Notre technologie optimise chaque publication et assure que tous les critères d’engagement sont respectés à chaque fois (call To action, shareability, optimisation du reach…)</p>
-      </div>
-      <div class="row justify-content-center justify-content-md-between text-center mb-3">
-        <div class="col-11 col-sm-9 col-md-4">
-          <p class="numberVA bold jaune mb-0">8 sur 10</p>
-          <p class="pr-2 pL-2 bold">C’est le nombre de Français qui vont sur les réseaux sociaux pour choisir un restaurant.</p>
-        </div>
-        <div class="col-11 col-sm-9 col-md-4">
-          <p class="numberVA bold jaune mb-0">50%</p>
-          <p class="pr-2 pL-2 bold">C’est le pourcentage de Français qui aiment découvrir les offres des restaurants sur les réseaux sociaux.</p>
-        </div>
-        <div class="col-11 col-sm-9 col-md-4">
-          <p class="numberVA bold jaune mb-0">0</p>
-          <p class="pr-2 pL-2 bold">C’est le nombre de minutes que vous allez passer pour gérer vos réseaux sociaux avec Qomi !</p>
-        </div>
-      </div>
-    </section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <hr>
-        </div>
-      </div>
-    </div>
     <section id="testimonials" class="container">
       <div class="row justify-content-center mr-2 ml-2 mt-5 mb-5 m-md-5">
         <h3 class="col-12 col-md-8 text-center mb-4 bold">Témoignages</h2>
       </div>
-      <div id="carouselTestimonialsIndicators" class="carousel slide m-md-5" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row justify-content-center justify-content-md-between align-items-center">
-              <div class="d-none d-md-block col-2 br50">
-                <img class="cicle" src="./images/LT.jpg" alt="First slide">
-              </div>
-              <div class="col-12 col-md-6">
-                <div>
-                  <p class="text-center text-md-left">« Dès l’ouverture, j’ai tout de suite compris l’intérêt d’être présent régulièrement sur les réseaux sociaux. Mais entre la gestion de la cuisine, du personnel et de tout le reste, j’ai vite manqué temps et délaissé ma page Facebook. Qomi a réglé ce problème pour moi »</p>
-                  <p class="blockquote-footer">Léa T.</p>
-                </div>
-              </div>
-              <div class="col-12 col-md-4">
-                <img class="" src="./images/sushi.gif" alt="First slide">
+      <div data-slick='{"dots": true, "autoplay": false}' class="testimonialsCarousel mr-4 ml-4">
+        <div class="">
+          <div class="row justify-content-center justify-content-md-between align-items-center">
+            <div class="d-none d-md-block col-2 br50">
+              <img class="cicle" src="./images/LT.jpg" alt="First slide">
+            </div>
+            <div class="col-12 col-md-6">
+              <div>
+                <p class="text-center text-md-left">« Dès l’ouverture, j’ai tout de suite compris l’intérêt d’être présent régulièrement sur les réseaux sociaux. Mais entre la gestion de la cuisine, du personnel et de tout le reste, j’ai vite manqué temps et délaissé ma page Facebook. Qomi a réglé ce problème pour moi »</p>
+                <p class="blockquote-footer">Léa T.</p>
               </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row justify-content-center justify-content-md-between align-items-center">
-              <div class="d-none d-md-block col-2 br50">
-                <img class="cicle" src="./images/ASV.jpg" alt="First slide">
-              </div>
-              <div class="col-12 col-md-6">
-                <div>
-                  <p class="text-center text-md-left">« J’ai bossé pendant 6 mois avec une agence de communication, mais c’est vite devenu une charge trop importante... La solution développée par Qomi rend la gestion de ma présence en ligne beaucoup plus accessible pour le lancement de mon restaurant »</p>
-                  <p class="blockquote-footer">Anne-Sophie V.</p>
-                </div>
-              </div>
-              <div class="col-8 col-md-4">
-                <img class="" src="./images/burger-cheese.gif" alt="First slide">
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row justify-content-center justify-content-md-between align-items-center">
-              <div class="d-none d-md-block col-2 br50">
-                <img class="cicle" src="./images/HF.jpg" alt="First slide">
-              </div>
-              <div class="col-12 col-md-6">
-                <div>
-                  <p class="text-center text-md-left">« J’ai toujours posté le même type de publications sur mon Facebook, et mis à part mes amis et clients fidèles, je n’ai jamais eu de retours... La variété des publications imaginée par QOMI m’a permis de toucher rapidement une clientèle différente »</p>
-                  <p class="blockquote-footer">Hubert F.</p>
-                </div>
-              </div>
-              <div class="col-8 col-md-4">
-                <img class="" src="./images/citation-burger.gif" alt="First slide">
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row justify-content-center justify-content-md-between align-items-center">
-              <div class="d-none d-md-block col-2 br50">
-                <img class="cicle" src="./images/PB.jpg" alt="First slide">
-              </div>
-              <div class="col-12 col-md-6">
-                <div>
-                  <p class="text-center text-md-left">« Je dois avouer qu’avant de travailler avec Qomi, je ne postais jamais sur Facebook. Depuis mon partenariat, j’ai rapidement observé que mes clients habituels avaient davantage le réflexe de venir manger chez moi »</p>
-                  <p class="blockquote-footer">Philippe B.</p>
-                </div>
-              </div>
-              <div class="col-8 col-md-4">
-                <img class="" src="./images/AdParlor_Photo Post_Newsfeed_Preview.png" alt="First slide">
-              </div>
+            <div class="col-12 col-md-4">
+              <img class="" src="./images/sushi.gif" alt="First slide">
             </div>
           </div>
         </div>
-        <ol class="carousel-indicators mt-4">
-          <li data-target="#carouselTestimonialsIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselTestimonialsIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselTestimonialsIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselTestimonialsIndicators" data-slide-to="3"></li>
-        </ol>
+        <div>
+          <div class="row justify-content-center justify-content-md-between align-items-center">
+            <div class="d-none d-md-block col-2 br50">
+              <img class="cicle" src="./images/ASV.jpg" alt="First slide">
+            </div>
+            <div class="col-12 col-md-6">
+              <div>
+                <p class="text-center text-md-left">« J’ai bossé pendant 6 mois avec une agence de communication, mais c’est vite devenu une charge trop importante... La solution développée par Qomi rend la gestion de ma présence en ligne beaucoup plus accessible pour le lancement de mon restaurant »</p>
+                <p class="blockquote-footer">Anne-Sophie V.</p>
+              </div>
+            </div>
+            <div class="col-8 col-md-4">
+              <img class="" src="./images/burger-cheese.gif" alt="First slide">
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="row justify-content-center justify-content-md-between align-items-center">
+            <div class="d-none d-md-block col-2 br50">
+              <img class="cicle" src="./images/HF.jpg" alt="First slide">
+            </div>
+            <div class="col-12 col-md-6">
+              <div>
+                <p class="text-center text-md-left">« J’ai toujours posté le même type de publications sur mon Facebook, et mis à part mes amis et clients fidèles, je n’ai jamais eu de retours... La variété des publications imaginée par QOMI m’a permis de toucher rapidement une clientèle différente »</p>
+                <p class="blockquote-footer">Hubert F.</p>
+              </div>
+            </div>
+            <div class="col-8 col-md-4">
+              <img class="" src="./images/citation-burger.gif" alt="First slide">
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="row justify-content-center justify-content-md-between align-items-center">
+            <div class="d-none d-md-block col-2 br50">
+              <img class="cicle" src="./images/PB.jpg" alt="First slide">
+            </div>
+            <div class="col-12 col-md-6">
+              <div>
+                <p class="text-center text-md-left">« Je dois avouer qu’avant de travailler avec Qomi, je ne postais jamais sur Facebook. Depuis mon partenariat, j’ai rapidement observé que mes clients habituels avaient davantage le réflexe de venir manger chez moi »</p>
+                <p class="blockquote-footer">Philippe B.</p>
+              </div>
+            </div>
+            <div class="col-8 col-md-4">
+              <img class="" src="./images/AdParlor_Photo Post_Newsfeed_Preview.png" alt="First slide">
+            </div>
+          </div>
+        </div>
       </div>
       <div class="row justify-content-center m-3 mb-5">
         <a href="#" class="btn btn-lg btn-raised cta mt-3 mb-3" data-toggle="modal" data-target=".bd-inscription-modal">Je change mon quotidien</a>
       </div>
     </section>
     <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <hr>
+        <div class="row">
+          <div class="col-12">
+            <hr>
+          </div>
         </div>
       </div>
-    </div>
     <section id="cequonfait" class="container">
       <div class="row justify-content-center justify-content-lg-around mt-5 mb-5">
         <div class="card text-center card-shadow col-11 col-sm-9 col-lg-5 mb-5 mb-lg-0">
@@ -297,7 +272,34 @@
         </div>
       </div>
     </div>
-    <section id="commentcasepasse" class="container mb-5">
+    <section id="chiffres" class="container">
+      <div class="row justify-content-center mr-2 ml-2 mt-5 mb-5 m-md-5">
+        <h3 class="col-12 col-md-8 text-center mb-4 bold">Développez votre chiffre d’affaires grâce aux réseaux sociaux</h2>
+        <p class="col-12 text-center">Notre technologie optimise chaque publication et assure que tous les critères d’engagement sont respectés à chaque fois (call To action, shareability, optimisation du reach…)</p>
+      </div>
+      <div class="row justify-content-center justify-content-md-between text-center mb-3">
+        <div class="col-11 col-sm-9 col-md-4">
+          <p class="numberVA bold jaune mb-0">8 sur 10</p>
+          <p class="pr-2 pL-2 bold">C’est le nombre de Français qui vont sur les réseaux sociaux pour choisir un restaurant.</p>
+        </div>
+        <div class="col-11 col-sm-9 col-md-4">
+          <p class="numberVA bold jaune mb-0">50%</p>
+          <p class="pr-2 pL-2 bold">C’est le pourcentage de Français qui aiment découvrir les offres des restaurants sur les réseaux sociaux.</p>
+        </div>
+        <div class="col-11 col-sm-9 col-md-4">
+          <p class="numberVA bold jaune mb-0">0</p>
+          <p class="pr-2 pL-2 bold">C’est le nombre de minutes que vous allez passer pour gérer vos réseaux sociaux avec Qomi !</p>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <hr>
+        </div>
+      </div>
+    </div>
+    <section id="commentcasepasse" class="container mb-5 d-none d-md-block">
       <div class="row justify-content-center mt-5 mb-5">
         <h3 class="col-8 text-center bold">Comment ça se passe ?</h2>
       </div>
@@ -333,7 +335,7 @@
         <a href="#" class="btn btn-lg btn-raised cta" data-toggle="modal" data-target=".bd-inscription-modal">Prendre rendez-vous avec un expert</a>
       </div>
     </section>
-    <div class="container">
+    <div class="container d-none d-md-block">
       <div class="row">
         <div class="col-12">
           <hr>
@@ -439,8 +441,8 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
     <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
     <script type="text/javascript" src="./js/main.js"></script>
   </body>
