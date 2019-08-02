@@ -12,6 +12,10 @@ $('.link-footer, .nav-link, .navbar-brand, .new-button').click(function() {
     }, 1500);
 });
 
+$('#vignette').click(function(){
+  $('#video-frame').attr('src', 'https://www.youtube.com/embed/7lNpruCbijA?rel=0&autoplay=1&modestbranding=1"');
+});
+
 $('.modal').click(function(){
   $('#video-frame').attr('src', 'https://www.youtube.com/embed/7lNpruCbijA?rel=0&autoplay=0&modestbranding=1"');
 });
