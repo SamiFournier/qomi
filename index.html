@@ -68,26 +68,29 @@
       </button>
     </nav>
     <section id="header" class="container-fluid">
-      <img src="./images/love.svg" alt="love Instagram restaurant" id="love1" class="bounce1">
-      <img src="./images/love.svg" alt="love Instagram restaurant" id="love2" class="bounce3">
-      <img src="./images/love.svg" alt="love Instagram restaurant" id="love3" class="bounce2">
-      <img src="./images/like.svg" alt="love Instagram restaurant" id="like1" class="bounce1">
-      <img src="./images/like.svg" alt="love Instagram restaurant" id="like2" class="bounce1">
-      <img src="./images/like.svg" alt="love Instagram restaurant" id="like3" class="bounce3">
-      <img src="./images/like.svg" alt="love Instagram restaurant" id="like4" class="bounce2">
-      <img src="./images/insta.png" alt="love Instagram restaurant" id="insta1" class="bounce2">
-      <img src="./images/insta.png" alt="love Instagram restaurant" id="insta2" class="bounce3">
-      <img src="./images/insta.png" alt="love Instagram restaurant" id="insta3" class="bounce3">
-      <img src="./images/facebook.png" alt="love Instagram restaurant" id="facebook1" class="bounce3">
-      <img src="./images/facebook.png" alt="love Instagram restaurant" id="facebook2" class="bounce1">
-      <img src="./images/facebook.png" alt="love Instagram restaurant" id="facebook3" class="bounce2">
+      <img src="./images/love.svg" alt="love Instagram restaurant" id="love1" class="bounce1 abs">
+      <img src="./images/love.svg" alt="love Instagram restaurant" id="love2" class="bounce3 abs">
+      <img src="./images/love.svg" alt="love Instagram restaurant" id="love3" class="bounce2 abs">
+      <img src="./images/like.svg" alt="love Instagram restaurant" id="like1" class="bounce1 abs">
+      <img src="./images/like.svg" alt="love Instagram restaurant" id="like2" class="bounce1 abs">
+      <img src="./images/like.svg" alt="love Instagram restaurant" id="like3" class="bounce3 abs">
+      <img src="./images/like.svg" alt="love Instagram restaurant" id="like4" class="bounce2 abs">
+      <img src="./images/insta.png" alt="love Instagram restaurant" id="insta1" class="bounce2 abs">
+      <img src="./images/insta.png" alt="love Instagram restaurant" id="insta2" class="bounce3 abs">
+      <img src="./images/insta.png" alt="love Instagram restaurant" id="insta3" class="bounce3 abs">
+      <img src="./images/facebook.png" alt="love Instagram restaurant" id="facebook1" class="bounce3 abs">
+      <img src="./images/facebook.png" alt="love Instagram restaurant" id="facebook2" class="bounce1 abs">
+      <img src="./images/facebook.png" alt="love Instagram restaurant" id="facebook3" class="bounce2 abs">
       <div id="fond_blanc" class="d-md-none"></div>
       <div class="m1vh row align-items-center pt-5">
-        <div class="row p-0 m-0 justify-content-between mt-5 pt-5">
-          <div id="header_title" class="d-flex flex-column col-12 col-md-8 justify-content-center align-items-center align-items-md-start text-center text-md-left">
+        <div class="row col-12 p-0 m-0 justify-content-between mt-5 pt-5">
+          <div id="header_title" class="d-flex flex-column col-12 col-md-6 col-xl-7 justify-content-center align-items-center align-items-md-start text-center text-md-left">
             <h1 class="bold">Le community manager intelligent des restaurateurs</h1>
             <h3 class="d-none d-md-flex">Qomi crée et diffuse de manière optimale votre contenu sur les réseaux sociaux</h3>
             <a href="./inscription.html" class="btn btn-lg btn-raised cta mt-3">Je veux découvrir</a>
+          </div>
+          <div id="vignette" class="d-flex col-12 col-md-6 col-xl-5 justify-content-center align-items-center mt-4 mb-4" data-toggle="modal" data-target="#videoModal">
+            <img src="./images/thumbnailSignature.png" alt="vignette vidéo présentation QOMI">
           </div>
         </div>
         <div class="arrow bounce col-12 align-self-end">
@@ -385,6 +388,18 @@
         </div>
       </div>
     </section>
+    <!-- Modal -->
+  <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body p-0">
+          <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7lNpruCbijA?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>

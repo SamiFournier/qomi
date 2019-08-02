@@ -12,6 +12,7 @@ $('.link-footer, .nav-link, .navbar-brand, .new-button').click(function() {
     }, 1500);
 });
 
+
 //post_form
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbyXd7HEGZodsVu8QA3cVkpcI2pKj5saTBvFxM_aJAGsyeiBjFk/exec'
