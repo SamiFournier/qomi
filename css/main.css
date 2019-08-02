@@ -62,10 +62,6 @@ h1, h5 {
 
 section#header {
   background-color: rgba(169, 213, 225, 0.4);
-  background-repeat: no-repeat;
-  background-size: auto 95%;
-  background-image: url(../images/homeCooker.png);
-  background-position: top right;
   color: black;
 }
 
@@ -227,6 +223,10 @@ section#header img.abs {
 
 #vignette img {
   width:90%;
+  -webkit-box-shadow: 10px 10px 26px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 26px -6px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 26px -6px rgba(0,0,0,0.75);
+
 }
 
 #vignette:hover {

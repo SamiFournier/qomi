@@ -12,6 +12,13 @@ $('.link-footer, .nav-link, .navbar-brand, .new-button').click(function() {
     }, 1500);
 });
 
+$('.modal').click(function(){
+  $('#video-frame').attr('src', 'https://www.youtube.com/embed/7lNpruCbijA?rel=0&autoplay=0&modestbranding=1"');
+});
+
+// $('#myModal').on('hidden.bs.modal', function () {
+//   $('#video-frame')[0].pause();
+// })
 
 //post_form
 
