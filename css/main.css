@@ -45,6 +45,7 @@ h1, h5 {
 
 .btn.btn-raised.cta{
   background-color: #ffc107;
+  font-weight: bold;
   color: #ffffff;
   border: none;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -280,7 +281,7 @@ section#header img.abs {
 }
 
 .fa-times {
-  color: #D06079;
+  color: #000;
   font-size: 1.5em;
 }
 
